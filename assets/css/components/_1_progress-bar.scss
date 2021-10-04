@@ -1,0 +1,21 @@
+/* -------------------------------- 
+
+File#: _1_progress-bar
+Title: Progress Bar
+Descr: Display the current progress of page load
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+.progress-bar {
+  position: fixed;
+  z-index: var(--zindex-fixed-element);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: .3s;
+  pointer-events: none;
+}

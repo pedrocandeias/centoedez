@@ -1,0 +1,59 @@
+/* -------------------------------- 
+
+File#: _1_scrolling-animations
+Title: Scrolling Animations
+Descr: Scrolling animations plugin
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+:root {
+  // translate
+  --scroll-fx-translate-x: 0;
+  --scroll-fx-translate-y: 0;
+  --scroll-fx-translate-z: 0;
+  // rotate
+  --scroll-fx-rotate-x: 0;
+  --scroll-fx-rotate-y: 0;
+  --scroll-fx-rotate-z: 0;
+  // skew
+  --scroll-fx-skew-x: 0;
+  --scroll-fx-skew-y: 0;
+  // scale
+  --scroll-fx-scale-x: 1;
+  --scroll-fx-scale-y: 1;
+  // opacity
+  --scroll-fx-opacity: 1;
+}
+
+@mixin scrollFxProps {
+  transform: translate3d(var(--scroll-fx-translate-x), var(--scroll-fx-translate-y), var(--scroll-fx-translate-z)) rotateX(var(--scroll-fx-rotate-x)) rotateY(var(--scroll-fx-rotate-y)) rotateZ(var(--scroll-fx-rotate-z)) skewX(var(--scroll-fx-skew-x)) skewY(var(--scroll-fx-skew-y)) scaleX(var(--scroll-fx-scale-x)) scaleY(var(--scroll-fx-scale-y)) !important;
+  opacity: var(--scroll-fx-opacity) !important;
+}
+
+.js {
+  .scroll-fx {
+    @include scrollFxProps;
+  }
+
+  .scroll-fx.scroll-fx--theme-transition,
+  .scroll-fx.scroll-fx--theme-transition > * {
+    transition: .3s;
+  }
+}
+
+// responsive modifiers
+@each $breakpoint, $value in $breakpoints {
+  @include breakpoint(#{$breakpoint}) {
+    .js {
+      .scroll-fx\@#{$breakpoint} {
+        @include scrollFxProps;
+      }
+
+      .scroll-fx\@#{$breakpoint}.scroll-fx--theme-transition,
+      .scroll-fx\@#{$breakpoint}.scroll-fx--theme-transition > * {
+        transition: .3s;
+      }
+    }
+  }
+}

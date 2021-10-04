@@ -1,0 +1,11 @@
+[19-Mar-2021 01:08:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function block_lab_add_block() in /home/pedrocan/public_html/sites/dev/110/wp-content/themes/centoedez/inc/create-blocks.php:8
+Stack trace:
+#0 /home/pedrocan/public_html/sites/dev/110/wp-content/themes/centoedez/functions.php(176): require()
+#1 /home/pedrocan/public_html/sites/dev/110/wp-settings.php(528): include('/home/pedrocan/...')
+#2 /home/pedrocan/public_html/sites/dev/110/wp-config.php(101): require_once('/home/pedrocan/...')
+#3 /home/pedrocan/public_html/sites/dev/110/wp-load.php(44): require_once('/home/pedrocan/...')
+#4 /home/pedrocan/public_html/sites/dev/110/wp-admin/admin.php(34): require_once('/home/pedrocan/...')
+#5 /home/pedrocan/public_html/sites/dev/110/wp-admin/themes.php(10): require_once('/home/pedrocan/...')
+#6 {main}
+  thrown in /home/pedrocan/public_html/sites/dev/110/wp-content/themes/centoedez/inc/create-blocks.php on line 8
+[19-Mar-2021 01:10:39 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/pedrocan/public_html/sites/dev/110/wp-content/themes/centoedez/inc/create-blocks.php on line 23

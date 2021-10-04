@@ -1,0 +1,21 @@
+.sticky-sharebar {
+    align-items: start !important;
+}
+
+.sticky-sharebar__list {
+    margin-top: 90px !important;
+}
+
+.wpcf7 .ajax-loader {
+    visibility: hidden;
+    display: block;
+    background-color: #23282d;
+    opacity: 0.75;
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    margin: 10px auto;
+    position: relative;
+}

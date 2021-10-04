@@ -1,0 +1,21 @@
+// 👇 optional -> set custom breakpoints
+// $breakpoints: (
+//   xs: 32rem,
+//   sm: 48rem,
+//   md: 64rem,
+//   lg: 80rem,
+//   xl: 90rem
+// );
+@import '../../node_modules/codyhouse-framework/main/assets/css/base';
+@import 'custom-style';
+@import 'components/**/*.scss';
+@import 'components/**/*.scss';
+.socials-v3__btn {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
+    border-radius: var(--radius-md);
+    transition: .3s;
+}
